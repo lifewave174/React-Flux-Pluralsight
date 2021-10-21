@@ -3,7 +3,7 @@ import PropTypes from 'react';
 
 const TextInput = () => {
   let wrapperClass = 'form-group';
-  if (props.error && props.error.length > 0) {
+  if (props.error.length > 0) {
     wrapperClass += ' has-error';
   }
   return (
@@ -29,6 +29,10 @@ const TextInput = () => {
     onChange: PropTypes.func.isRequired,
     value: PropTypes.string,
     error: PropTypes.string,
+  };
+
+  TextInput.defaultProps = {
+    error: '',
   };
 };
 
