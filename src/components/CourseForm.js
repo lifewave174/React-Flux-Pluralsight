@@ -18,11 +18,11 @@ function CourseForm(props) {
           <select
             id='author'
             name='authorId'
-            value=''
+            value={props.course.authorId || ''}
             className='form-control'
             onChange={props.onChange}
           >
-            <option value={props.course.authorId || ''} />
+            <option value='' />
             <option value='1'>Cory House</option>
             <option value='2'>Scott Allen</option>
           </select>

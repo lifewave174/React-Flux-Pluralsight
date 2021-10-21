@@ -77,6 +77,30 @@
       "authorId": 1,
       "category": "fgdsfgd",
       "createdAt": 1634817704627
+    },
+    {
+      "id": 12,
+      "slug": "some-course",
+      "title": "some course",
+      "authorId": 2,
+      "category": "ewrew",
+      "createdAt": 1634818064868
+    },
+    {
+      "id": 13,
+      "slug": "some-course-2",
+      "title": "some course 2",
+      "authorId": 2,
+      "category": "something",
+      "createdAt": 1634818246925
+    },
+    {
+      "id": 14,
+      "slug": "new-course",
+      "title": "new course ",
+      "authorId": 2,
+      "category": "hmmmm",
+      "createdAt": 1634818710379
     }
   ],
   "authors": [
