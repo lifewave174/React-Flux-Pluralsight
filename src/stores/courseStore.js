@@ -19,7 +19,7 @@ class CourseStore extends EventEmitter {
   }
 
   getCourses() {
-    return _coruses;
+    return _courses;
   }
 
   getCourseBySlug(slug) {
@@ -33,6 +33,10 @@ Dispatcher.register((action) => {
   switch (action.actionType) {
     case actionTypes.CREATE_COURSE:
       _courses.push(action.course);
+      store.emitChange();
+      break;
+    case actionTypes.LOAD_COURSES:
+      _courses = action.courses;
       store.emitChange();
       break;
     default:
